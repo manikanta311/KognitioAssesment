@@ -1,0 +1,169 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap");
+
+.part2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5rem 6rem;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.part2-left {
+  width: 50%;
+  max-width: 550px;
+}
+
+.part2-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.part2-description {
+  color: #666;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Stats Card */
+.stats-card {
+  background: #fff;
+  border-radius: 1.8rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  width: 100%;
+}
+
+.stat-item {
+  margin-bottom: 1.5rem;
+}
+
+.stat-item:last-child {
+  margin-bottom: 0;
+}
+
+.stat-title {
+  font-weight: 600;
+  color: #222;
+}
+
+.stat-text {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #eaeaea;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 8px;
+  border-radius: 10px;
+}
+
+/* Right Section */
+.part2-right {
+  position: relative;
+  width: 50%;
+  min-height: 550px;
+}
+
+.image-box {
+  position: absolute;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+/* Floating arrow icon */
+.icon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #7b61ff;
+  color: white;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Positioning images */
+.img1 {
+  top: 1rem;
+  right: 2rem;
+  width: 280px;
+  height: 180px;
+}
+
+.img2 {
+  top: 14rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 180px;
+}
+
+.img3 {
+  top: 28rem;
+  right: 5rem;
+  width: 280px;
+  height: 180px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .part2-container {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+
+  .part2-left,
+  .part2-right {
+    width: 100%;
+  }
+
+  .part2-right {
+    margin-top: 3rem;
+    min-height: 450px;
+  }
+
+  .image-box {
+    position: relative;
+    transform: none !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,151 @@
+.part4-container {
+  background-color: #ffffff;
+  padding: 5rem 6rem;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* ===== TOP SECTION ===== */
+.part4-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* ===== LEFT TEXT ===== */
+.part4-left {
+  flex: 1 1 28%;
+  
+
+}
+
+.part4-left h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.part4-left p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ===== CENTER IMAGE ===== */
+.part4-center {
+  flex: 1 1 30%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.part4-center img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.part4-center img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== RIGHT TEXT ===== */
+.part4-right {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.part4-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.part4-icon {
+  font-size: 1.2rem;
+  color: #6366f1;
+  margin-top: 3px;
+}
+
+.part4-highlight-blue {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.part4-highlight-purple {
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.part4-item p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* ===== BOTTOM IMAGE GALLERY ===== */
+.part4-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.part4-gallery img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.part4-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .part4-container {
+    padding: 4rem 2rem;
+  }
+
+  .part4-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .part4-left,
+  .part4-right {
+    flex: 1 1 100%;
+  }
+
+  .part4-center  {
+    max-width: 280px;
+    height: 700px;
+  }
+}
+
+@media (max-width: 640px) {
+  .part4-left h2 {
+    font-size: 2rem;
+  }
+
+  .part4-gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
